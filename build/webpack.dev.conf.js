@@ -13,7 +13,10 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 //接口的调用
+var express = require('express')
 var axios = require('axios')
+var app = express()
+var apiRoutes = express.Router()
 
 
 const devWebpackConfig = merge(baseWebpackConfig, {

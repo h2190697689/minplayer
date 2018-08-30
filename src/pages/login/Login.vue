@@ -14,7 +14,7 @@
             <button @click="check">登 录</button>
             <span v-show="isshow">账号或密码错误</span>
           </div>
-          <div class="agreement">登录即代表阅读并同意<span style="color: darkturquoise">服务条款</span></div>
+          <div class="agreement">账号，密码都为:123</div>
       </div>
     </div>
 </template>
@@ -176,9 +176,12 @@ export default {
     }
   }
   .agreement{
-    margin-top: 300px;
-    width: 100%;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 18px;
     text-align: center;
-    color: white;
+    color: yellow;
+    font-family: "Adobe 仿宋 Std R";
   }
 </style>
