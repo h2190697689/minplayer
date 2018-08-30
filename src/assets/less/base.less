@@ -1,0 +1,40 @@
+//背景图片
+.back-ground{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+//table 区域
+@table-lh:60px;
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsisMore(@lines:6) {
+  word-break: break-all;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:@lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.boxSize{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.borRadius(@het){
+  -webkit-border-radius: @het;
+  -moz-border-radius:@het ;
+  border-radius: @het;
+}
+
