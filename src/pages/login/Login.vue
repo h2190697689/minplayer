@@ -69,7 +69,7 @@ export default {
     ...mapMutations(['setToken'])
   },
   mounted () {
-    axios.get('http://him.mynatapp.cc/static/login.json').then(this.getUsers)
+    axios.get('https://h2190697689.github.io/minplayer/dist/static/login.json').then(this.getUsers)
   },
   destroyed () {
     if (this.timer) {
